@@ -1,7 +1,6 @@
 import webbrowser, bs4, pyinputplus as pyip
 from googlesearch import search
 
-
 #Fetch URLs for query
 query = pyip.inputStr('Search: ')
 numOpen = pyip.inputInt('Number of links: ')
@@ -43,7 +42,6 @@ for i in range(numOpen):
         LinkToAdd = url_list[i]
         forum_links += [LinkToAdd]
         filter_indexes_2 += [i]
-
 
 numYoutube = len(youtube_links)
 numForum = len(forum_links)
