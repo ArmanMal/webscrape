@@ -113,7 +113,7 @@ option = pyip.inputStr("[O] to open links: " )
 while(1):
     if option == 'O':
         open_link = pyip.inputInt("Open link #: ")
-        phrase_idx = phrase_count_ordered[open_link]
+        phrase_idx = phrase_count_ordered[open_link - 1]
         urlToOpen = url_list[phrase_idx]
         webbrowser.open(urlToOpen)
         option2 = pyip.inputStr("[T] to terminate, [O] to open another link: ")
